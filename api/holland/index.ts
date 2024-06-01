@@ -4,10 +4,7 @@ const app = express();
 const port = 3000;
 
 app.get("/", (req, res) => {
-	res.send("hello vercel");
-})
-app.get("/nested", (req, res) => {
-	res.send("this is from root/api dir");
+	res.send("this is a different route");
 })
 
 app.listen(port, () => console.log("listenning"));
